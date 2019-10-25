@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-    public class Hero : MonoBehaviour
-    {
-        static public Hero S;
+public class Hero : MonoBehaviour
+   {
+        static public Hero S; //Singleton 
 
         [Header("Set In Inspector")]
         public float speed = 30;
