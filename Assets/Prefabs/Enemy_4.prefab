@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 680289042397628779}
   - component: {fileID: 680289042397628780}
   - component: {fileID: 680289042397628781}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cockpit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,9 +101,9 @@ GameObject:
   m_Component:
   - component: {fileID: 680289043183319044}
   - component: {fileID: 1884610906642083217}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy_4
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 680289043503909365}
   - component: {fileID: 680289043503909366}
   - component: {fileID: 680289043503909367}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WingR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 680289043581593626}
   - component: {fileID: 680289043581593627}
   - component: {fileID: 680289043581593628}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fuselage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 680289043746955779}
   - component: {fileID: 680289043746955780}
   - component: {fileID: 680289043746955781}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WingL
   m_TagString: Untagged
   m_Icon: {fileID: 0}

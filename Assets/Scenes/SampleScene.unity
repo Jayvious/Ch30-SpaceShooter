@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 462433363}
   - component: {fileID: 462433362}
   - component: {fileID: 462433361}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 1544712342}
   - component: {fileID: 1544712341}
   - component: {fileID: 1544712344}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,9 +512,9 @@ GameObject:
   - component: {fileID: 1687396832}
   - component: {fileID: 1687396834}
   - component: {fileID: 1687396835}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: _Hero
-  m_TagString: Untagged
+  m_TagString: Hero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -610,7 +610,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1851441459}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CockPit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -644,7 +644,7 @@ GameObject:
   - component: {fileID: 1913618318}
   - component: {fileID: 1913618317}
   - component: {fileID: 1913618316}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
