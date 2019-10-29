@@ -508,7 +508,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1687396831}
-  - component: {fileID: 1687396833}
   - component: {fileID: 1687396832}
   - component: {fileID: 1687396834}
   - component: {fileID: 1687396835}
@@ -552,18 +551,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &1687396833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1687396830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55f1e849ddd5b194686f46a826cc1465, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1687396834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,7 +566,7 @@ MonoBehaviour:
   speed: 30
   rollMult: -45
   pitchMult: 30
-  shieldLevel: 1
+  shieldLevel: 4
 --- !u!114 &1687396835
 MonoBehaviour:
   m_ObjectHideFlags: 0

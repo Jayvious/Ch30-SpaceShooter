@@ -3,50 +3,91 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Hero : MonoBehaviour
-   {
-        static public Hero S; //Singleton 
+{
+    static public Hero S;
 
-        [Header("Set In Inspector")]
-        public float speed = 30;
-        public float rollMult = -45;
-        public float pitchMult = 30;
+    [Header("Set In Inspector")]
+    public float speed = 30;
+    public float rollMult = -45;
+    public float pitchMult = 30;
 
+    [Header("Set Dynamically")]
+    public float shieldLevel = 1;
 
-
-        [Header("Set Dynamically")]
-        public float shieldLevel = 1;
-
-        void Awake()
+    private GameObject lastTriggerGo = null;
+     void Awake()
+    {
+      if(S == null)
         {
-            if (S == null)
-            {
-                S = this;
-            }
-            else
-            {
-                Debug.LogError("Hero.Awake() - Attempted to assign second Hero.S!");
-            }
+            S = this;
+        }
+        else
+        {
+            Debug.LogError("Hero.Awake() -  Attempted to assign second Hero.S!");
+        } 
+
+    }
+
+     void Update()
+    {
+        float xAxis = Input.GetAxis("Horizontal");
+        float yAxis = Input.GetAxis("Vertical");
+
+        Vector3 pos = transform.position;
+        pos.x += xAxis * speed * Time.deltaTime;
+        pos.y += yAxis * speed * Time.deltaTime;
+        transform.position = pos;
+
+        transform.rotation = Quaternion.Euler(yAxis * pitchMult, xAxis * pitchMult, 0);
+    }
+
+     void OnTriggerEnter(Collider other)
+    {
+        Transform rootT = other.gameObject.transform.root;
+        GameObject go = rootT.gameObject;
+       //print("Triggered: " + go.name);
+
+        if(go == lastTriggerGo)
+        {
+            return;
         }
 
-        // Start is called before the first frame update
+        lastTriggerGo = go;
 
-
-        // Update is called once per frame
-        void Update()
+        if(go.tag == "Enemy")
         {
-
-            float xAxis = Input.GetAxis("Horizontal");
-            float yAxis = Input.GetAxis("Vertical");
-
-            Vector3 pos = transform.position;
-            pos.x += xAxis * speed * Time.deltaTime;
-            pos.y += yAxis * speed * Time.deltaTime;
-            transform.position = pos;
-
-
-            transform.rotation = Quaternion.Euler(yAxis * pitchMult, xAxis * rollMult, 0);
-
-
-
+            shieldLevel--;
+            Destroy(go);
+        }
+        else
+        {
+            print("Triggered by non-Enemy: " + go.name);
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
