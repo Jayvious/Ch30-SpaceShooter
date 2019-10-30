@@ -435,7 +435,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544712339}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -566,7 +566,11 @@ MonoBehaviour:
   speed: 30
   rollMult: -45
   pitchMult: 30
-  shieldLevel: 4
+  gameRestartDelay: 2
+  projectilePrefab: {fileID: 408434113311400383, guid: f3e4c982717e4e0439700e38ed340b15,
+    type: 3}
+  projectileSpeed: 40
+  _shieldLevel: 4
 --- !u!114 &1687396835
 MonoBehaviour:
   m_ObjectHideFlags: 0
